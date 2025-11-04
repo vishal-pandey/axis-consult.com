@@ -13,15 +13,34 @@
       align-items: center;
       justify-content: center;
     }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
     img {
       display: block;
       max-width: 90vw;
-      max-height: 90vh;
+      max-height: 80vh;
       object-fit: contain;
+    }
+    .email {
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      font-size: 2.8rem;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+    .email:hover {
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
-  <img src="Axis Consult.png" alt="Axis Consult logo">
+  <div class="container">
+    <img src="Axis Consult.png" alt="Axis Consult logo">
+    <a href="mailto:Info@axis-consult.com" class="email">Info@axis-consult.com</a>
+  </div>
 </body>
 </html>
